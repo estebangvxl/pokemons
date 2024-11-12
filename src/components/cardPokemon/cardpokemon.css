@@ -1,0 +1,29 @@
+.card__pokemon{
+
+    border-radius: 10px;
+    border-color: #e57622;
+    border-style: solid;
+    min-width: 155px;
+    animation: animate-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry, exit;
+
+    .img_pokemon{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@keyframes animate-in {
+    0% { opacity: 0; transform: translateY(50%); }
+    100% { opacity: 1; transform: translateY(0%); }
+  }
+  @keyframes animate-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+  }
